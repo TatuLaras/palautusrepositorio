@@ -108,4 +108,3 @@ class TestKauppa(unittest.TestCase):
         self.kauppa.tilimaksu("pekka", "12345")
 
         self.pankki_mock.tilisiirto.assert_called_with(ANY, ANY, ANY, ANY, 6)
-        # muutos
